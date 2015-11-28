@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background= "@drawable/home_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_Label_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5sp"
+        android:text="IP:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_content_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Label_ip" />
+
+    <TextView
+        android:id="@+id/tv_Label_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_content_ip"
+        android:layout_margin="5sp"
+        android:text="Port:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_content_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Label_port"
+ 		 />
+
+    <TextView
+        android:id="@+id/tv_Label_buffersize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_content_port"
+        android:layout_margin="5sp"
+        android:text="bufferSize(KB),just effect for live:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_content_buffersize"
+        style="@style/styleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Label_buffersize"
+    	 />
+
+    <Button
+        android:id="@+id/btn_setting_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_content_buffersize"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20sp"
+        android:text="确认" />
+
+</RelativeLayout>

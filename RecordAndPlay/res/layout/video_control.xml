@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RelativeLayout 
+        android:id="@+id/rly_video_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3000">
+        
+        <TextView 
+            android:id="@+id/tv_video_fileName"
+            android:text="文件名称"
+            android:layout_margin="5sp"
+            android:layout_height="25sp"
+            android:layout_width="wrap_content"/>
+        
+        <TextView 
+            android:id="@+id/tv_video_During"
+            android:text="10:10"
+            android:layout_centerInParent="true"
+            android:layout_height="25sp"
+            android:layout_width="wrap_content"/>
+        
+        <Button 
+            android:text="设置"
+            android:textSize="12sp"
+            android:layout_height="30sp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"/>
+        
+    </RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/rly_video_bottom" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3000"
+        android:layout_alignParentBottom="true">
+        
+         <SeekBar
+             android:id="@+id/sb_video_during"
+             android:layout_width="fill_parent"
+             android:layout_height="20sp"
+             android:layout_marginTop="5sp"
+             android:layout_marginLeft="5sp"
+             android:layout_marginRight="5sp" />
+        
+         <Button 
+            android:id="@+id/btn_video_play"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/sb_video_during"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_height="30sp"
+            android:layout_width="30sp"
+            android:background="@drawable/ic_button_play" />
+        
+         <Button 
+            android:id="@+id/btn_video_slow"
+            android:layout_toLeftOf="@+id/btn_video_play"
+            android:layout_below="@+id/sb_video_during"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="4sp"
+            android:layout_marginBottom="5sp"
+            android:layout_height="30sp"
+            android:layout_width="30sp"
+            android:background="@drawable/ic_button_prev" />
+         
+         <Button 
+            android:id="@+id/btn_video_fast"
+            android:layout_toRightOf="@+id/btn_video_play"
+            android:layout_below="@+id/sb_video_during"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="5sp"
+            android:layout_height="30sp"
+            android:layout_width="30sp"
+            android:background="@drawable/ic_button_next" />
+         <TextView 
+             android:id="@+id/tv_video_startPosition"
+             android:text="00:00"
+             android:layout_height="25sp"
+             android:layout_width="wrap_content"
+             android:layout_below="@+id/sb_video_during"
+             android:layout_alignParentLeft="true"/>
+         <TextView 
+             android:id="@+id/tv_video_endPosition"
+             android:text="00:00"
+             android:layout_height="25sp"
+             android:layout_width="wrap_content"
+             android:layout_below="@+id/sb_video_during"
+             android:layout_alignParentRight="true"/>
+    </RelativeLayout>    
+</RelativeLayout>

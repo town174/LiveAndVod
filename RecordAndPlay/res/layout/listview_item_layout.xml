@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <ImageView 
+        android:id="@+id/VideoBreviaryIV"
+        android:layout_width="75sp"
+        android:layout_height="60sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginLeft="8sp"
+        android:background="@color/grey"/>
+	<TextView 
+	    android:id="@+id/VideoDurationTV"
+	    android:layout_below="@+id/VideoBreviaryIV"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginBottom="5sp"
+	    android:layout_width="75sp"
+	    android:layout_height="15sp"
+	    android:gravity="center"
+	    android:text="01:10:36"/>
+    <TextView 
+	    android:id="@+id/VideoNameTV"
+	    android:layout_toRightOf="@+id/VideoBreviaryIV"
+        android:layout_marginTop="5sp"
+        android:layout_marginLeft="8sp"
+	    android:layout_width="220sp"
+	    android:layout_height="80sp"
+	    android:gravity="center"
+	    android:ellipsize="end"
+	    android:textSize="18sp"
+	    android:textColor="@color/black"
+	    android:text="01-泌尿科手术-2015-09-15：09：09：09"/>
+	
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.recordandplay.MainActivity" >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world" />
+</RelativeLayout> -->
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@android:id/tabhost"
+    android:background="@drawable/fast_scroller">
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent" 
+        	android:layout_width="match_parent"
+        	android:layout_height="0dp" 
+        	android:layout_weight="1">
+        </FrameLayout>
+
+        <TabWidget 
+            android:id="@android:id/tabs"
+    	    android:visibility="gone"
+    	    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    	    >
+    	</TabWidget>
+    	
+    	<RadioGroup
+    	    android:id="@+id/tab_BtnGroup" 
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:orientation="horizontal"
+    	    android:padding="10dp"
+    	    android:background="@drawable/mmfooter_bg">
+    	    
+    	    <RadioButton 
+    	    	android:id="@+id/tab_icon_baseInfo"
+    	    	android:text="@string/baseInfo"
+    	    	android:drawableTop="@drawable/tab_weixin"
+    	    	android:checked="true"
+    	    	style="@style/tab_button_bg"
+    	    	/>
+    	    	<!-- 跑马需要下面两属性为真 --> 
+    	    	<!-- android:focusable="true" -->
+    	    	<!-- android:focusableInTouchMode="true" -->
+					    
+    	    <RadioButton
+    	        android:id="@+id/tab_icon_vod"
+    	    	android:text="@string/vod"
+    	    	android:drawableTop="@drawable/tab_frd"
+    	    	style="@style/tab_button_bg"   
+    	        />
+    	    <RadioButton 
+    	    	android:id="@+id/tab_icon_live"
+    	    	android:text="@string/live"
+    	    	android:drawableTop="@drawable/tab_address"
+    	    	style="@style/tab_button_bg"  
+    	        />
+    	    <RadioButton
+    	    	android:id="@+id/tab_icon_set"
+    	    	android:text="@string/setting"
+    	    	android:drawableTop="@drawable/tab_settings_normal"
+    	    	style="@style/tab_button_bg"   
+    	        />
+    	    
+    	</RadioGroup>
+    	
+    </LinearLayout>
+</TabHost>

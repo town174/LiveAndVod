@@ -1,0 +1,62 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+	
+        <!-- 按钮文字样式 -->
+    <style name="tab_text_color">
+        <item name="android:textColor">@color/tab_text</item>
+		<item name="android:textSize">14sp</item>  
+		<!-- 文字太长不能完全显示,从左向右跑马灯效果 marquee -->
+		<item name="android:ellipsize">marquee</item>   
+		<!-- 单行显示 -->
+		<item name="android:singleLine">true</item>   
+    </style>
+    
+    <!-- 按钮样式 -->
+    <style name="tab_button_bg">
+        <item name="android:textColor">@color/tab_text</item>
+		<item name="android:textSize">14sp</item>  
+		<!-- 文字太长不能完全显示,从左向右跑马灯效果 marquee -->
+		<item name="android:ellipsize">marquee</item>   
+		<!-- 单行显示 -->
+		<item name="android:singleLine">true</item> 
+        
+        <!-- <item name="android:textAppearance">@style/tab_text_color</item> 引用无效~~-->
+ 		<item name="android:gravity">center</item>  
+        <item name="android:background">@drawable/tab_bg</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item> 
+    </style>
+    
+    <!-- 弹出框半透明背景 -->
+    <style name="PopWindowStyle">
+          <item name="android:windowBackground">@android:color/transparent</item>
+          <item name="android:windowFrame">@null</item>
+          <item name="android:windowNoTitle">true</item>
+          <item name="android:windowIsFloating">true</item>
+          <item name="android:windowIsTranslucent">true</item>
+          <item name="android:windowContentOverlay">@null</item>
+          <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+          <item name="android:backgroundDimEnabled">true</item>
+    </style>
+    <style name="styleName" parent="android:Widget.EditText">
+        <item name="android:inputType">number</item>
+    </style>
+</resources>

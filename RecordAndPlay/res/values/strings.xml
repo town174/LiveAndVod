@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">录播通讯软件</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="baseInfo">基本信息</string>
+	<string name="vod">点播列表</string>
+	<string name="live">直播频道</string>
+	<string name="setting">我的设置</string>	
+	<string name="vodClass">点播分类:</string>
+	<string name="vodList">点播列表:</string>
+	
+	<string name="video_loading">正在加载</string>
+</resources>

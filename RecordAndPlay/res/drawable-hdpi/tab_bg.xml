@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 点击背景为tab_bg_halo-->
+    <item android:state_enabled="true" 
+        android:state_checked="true" 
+        android:drawable="@drawable/tab_bg_halo">
+    </item>
+    
+	<!-- 默认背景为mm_trans -->
+	<item android:drawable="@drawable/mm_trans"></item>
+</selector>

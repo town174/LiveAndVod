@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    >
+    
+    <RelativeLayout
+        android:id="@+id/liveClassRLy"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/singleline_item_bg"
+        android:minHeight="30dp" >
+        <TextView
+            android:id="@+id/liveClassLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="直播分类:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/liveClassValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/liveClassLbl"
+            android:background="@drawable/edittext1"
+            android:gravity="left|center"
+            android:minHeight="40dp"
+            android:paddingLeft="5dp"
+            android:textColor="#ff000000"
+            android:textSize="20sp" />
+        <ImageButton
+            android:id="@+id/liveClassDropDown"
+            android:layout_width="30sp"
+            android:layout_height="18sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24px"
+            android:background="@drawable/down_arrow" />
+    </RelativeLayout>    
+    <ListView 
+        android:layout_marginTop="10sp"
+        android:id="@+id/liveChannelList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">        
+    </ListView>     
+</LinearLayout>
